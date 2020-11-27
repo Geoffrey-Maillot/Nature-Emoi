@@ -38,13 +38,13 @@
     justify-content: space-between;
     margin-left: 4rem;
     width: 30% ;
-    min-width: 310px;
 }
 
 .nav a {
-   
+    flex-shrink: 0;
     display: inline-block;
     position: relative;
+    margin-left: 0.8rem;
 
 }
 
@@ -117,7 +117,7 @@ transition: all 0.5s;
 h2 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 h2::after {
@@ -149,6 +149,9 @@ display: block;
 
 .best-sell__img {
     display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .best-sell__plante__footer {
@@ -179,14 +182,65 @@ display: block;
     box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
 }
 
+.plants-title {
+    margin-top: 200px;
+
+}
+
+.our-plants {
+
+}
+
+.our-plants-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plant-flex {
+    width: calc(50% - 1rem);
+    height: 550px;
+    max-width: 580px;
+    min-width: 338px;
+   margin-right: auto;
+   margin-left: auto;
+    flex: 1 1 auto;
+}
+.plant-flex-left {
+    background: url(/images/nos_plantes/1.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+.plant-flex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plant-flex-top {
+    background: url(/images/nos_plantes/2.jpg) center center no-repeat;
+    background-size: cover;
+    height: calc(50% - 0.8rem);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+.plant-flex-bottom {
+    background: url(/images/nos_plantes/3.jpg) center center no-repeat ;
+    background-size: cover;
+    height: calc(50% - 0.8rem);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
 
 
 
 
-
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     .header .nav {
         display: none;
@@ -220,6 +274,37 @@ display: block;
         width: auto;
     }
 }
+
+@media screen and (max-width: 591px) {
+
+    .plants-limit {
+        width: 300px;
+        min-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        flex: 0 1 auto;
+    }
+
+    .plant-flex-left {
+        height: 450px;
+    }
+    .plant-flex-right {
+        height: auto;
+    }
+
+    .plant-flex-top {
+        height: 450px;
+    }
+
+    .plant-flex-bottom {
+        height:450px;
+        margin-top: 1.5rem;
+    }
+
+     
+
+}
+
 
 
 
