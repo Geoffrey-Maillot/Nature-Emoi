@@ -167,6 +167,10 @@ h2::after {
     box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
 }
 
+.best-sell__plante__footer:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 7px;
+}
+
 .plante {
     font-size: 1rem;
     font-weight: 700;
@@ -180,6 +184,10 @@ h2::after {
     padding: 5px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
+}
+
+.more:hover {
+    color: black;
 }
 
 .plants-title {
