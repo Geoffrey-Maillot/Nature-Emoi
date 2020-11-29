@@ -9,13 +9,13 @@
 .header {
     width: 100%; 
     background: url(images/bg.jpg) no-repeat center 80% ;
-        background-size: cover;
+    background-size: cover;
 }
 .header_container {
-   
+    
     max-width: 1600px;
     height: 600px;
-
+    
     margin-right: auto;
     margin-left: auto;
     color: white;
@@ -45,20 +45,20 @@
     display: inline-block;
     position: relative;
     margin-left: 0.8rem;
-
+    
 }
 
 .nav a::after {
-content: "";
-display: block;
-opacity: 0;
-width: 100%;
-height: 2px;
-background-color: white;
-position: absolute;
-top:35px;
-left: 0;
-transition: all 0.5s;
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top:35px;
+    left: 0;
+    transition: all 0.5s;
 }
 
 .nav a:hover::after {
@@ -121,12 +121,12 @@ h2 {
 }
 
 h2::after {
-content: '';
-width: 40px;
-height: 8px;
-background-color:  #ADD981;
-display: block;
-
+    content: '';
+    width: 40px;
+    height: 8px;
+    background-color:  #ADD981;
+    display: block;
+    
 }
 
 .best-sell__flex {
@@ -184,11 +184,7 @@ display: block;
 
 .plants-title {
     margin-top: 200px;
-
-}
-
-.our-plants {
-
+    
 }
 
 .our-plants-flex {
@@ -201,13 +197,13 @@ display: block;
     width: calc(50% - 1rem);
     height: 550px;
     max-width: 580px;
-    min-width: 338px;
-   margin-right: auto;
-   margin-left: auto;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
     flex: 1 1 auto;
 }
 .plant-flex-left {
-    background: url(/images/nos_plantes/1.jpg) center center no-repeat;
+    background: url(images/nos_plantes/1.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
     margin-bottom: 1.5rem;
@@ -222,7 +218,7 @@ display: block;
 }
 
 .plant-flex-top {
-    background: url(/images/nos_plantes/2.jpg) center center no-repeat;
+    background: url(images/nos_plantes/2.jpg) center center no-repeat;
     background-size: cover;
     height: calc(50% - 0.8rem);
     position: relative;
@@ -230,31 +226,97 @@ display: block;
 }
 
 .plant-flex-bottom {
-    background: url(/images/nos_plantes/3.jpg) center center no-repeat ;
+    background: url(images/nos_plantes/3.jpg) center center no-repeat ;
     background-size: cover;
     height: calc(50% - 0.8rem);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
 }
 
+.our-plants-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
 
+.left {
+    width: 25%;
+    background: url(images/nos_plantes/4.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+    min-width: 200px;
+    min-height: 345px;
+}
+.middle {
+    background: url(images/nos_plantes/5.jpg) center center no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 0 0.8rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+    max-width: 580px;
+    min-height: 345px;
+    flex: 0 1 auto;
+}
+.right {
+    background: url(images/nos_plantes/6.jpg) center center no-repeat;
+    background-size: cover;
+    width: 25%;
+    position: relative; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+    min-width: 200px;
+    min-height: 345px;
+}
+
+@media screen and (max-width: 1007px) {
+    
+    .our-plants-flex {
+        flex-wrap: wrap;
+    }
+    .left {
+        width: calc(50% - 1rem);
+        margin-right: 0.5rem;
+        min-width: 200px;
+        min-height: 345px;
+        margin-top: 1.5rem;
+        
+    }
+    .middle {
+        width: 100%;
+        min-height: 345px;
+        order: 10;
+        margin: 1.5rem 0 ;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .right {
+        width: calc(50% - 1rem);
+        min-width: 200px;
+        min-height: 345px;
+        margin-left: 0.5rem;
+        margin-top: 1.5rem;
+        
+    }
+}
 
 
 @media screen and (max-width: 768px) {
-
+    
     .header .nav {
         display: none;
     }
-
+    
     .header .title {
         display: none;
     }
-
+    
     .header_container {
         position: relative; 
-         height: 300px;
+        height: 300px;
     }
-
+    
     .header img {
         position: absolute;
         top: 50%;
@@ -262,13 +324,13 @@ display: block;
         transform: translate(-50%, -50%);
         width: 200px;
     }
-
+    
     .header .scroll {
         text-align: center;
-       margin: 1rem auto;
-
+        margin: 1rem auto;
+        
     }
-
+    
     .service {
         justify-content: space-between;
         width: auto;
@@ -276,33 +338,44 @@ display: block;
 }
 
 @media screen and (max-width: 591px) {
-
+    
     .plants-limit {
         width: 300px;
-        min-width: 300px;
+        height: 450px;
         margin-right: auto;
         margin-left: auto;
         flex: 0 1 auto;
     }
-
+    
+    .our-plant-flex-bottom {
+        width: 300px;
+        height: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        flex: 0 1 auto;
+        
+    } 
+    
     .plant-flex-left {
         height: 450px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .plant-flex-right {
         height: auto;
     }
-
+    
     .plant-flex-top {
         height: 450px;
     }
-
+    
     .plant-flex-bottom {
         height:450px;
         margin-top: 1.5rem;
     }
-
-     
-
+    
+    
+    
 }
 
 
